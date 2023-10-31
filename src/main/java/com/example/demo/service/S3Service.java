@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-
 @Service
 @RequiredArgsConstructor
 public class S3Service {
@@ -14,7 +13,6 @@ public class S3Service {
     @Value("${cloud.aws.s3.bucket}")
     private String bucket;
 
-    // get file URL
     public String getPerksPath(String path) {
         return amazonS3Client.getUrl(bucket, "perks/"+path).toString();
     }
