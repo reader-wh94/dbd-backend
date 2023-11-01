@@ -73,5 +73,5 @@ jobs:
         --application-name dbd-project \
         --deployment-group-name dbd-group \
         --file-exists-behavior OVERWRITE \
-        --s3-location bucket=dbd-project,bundleType=zip,key=dbdBackend.zip \
+        --s3-location bucket=dbd-project,bundleType=zip,key=dbd-project/dbdBackend.zip \
         --region ap-northeast-2
