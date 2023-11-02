@@ -69,6 +69,10 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
       run: |
-        aws deploy create-deployment --application-name dbd-project --ignore-application-stop-failures  CodeDeployDefault.AllAtOnce --deployment-group-name dbd-group --s3-location bucket=dbd-project,bundleType=zip,key=dbdBackend.zip \
-        --region ap-northeast-2
-        
+        aws deploy create-deployment \
+        --application-name dbd-project \
+        --deployment-config-name CodeDeployDefault.AllAtOnce \
+        --deployment-group-name dbd-group \
+        --ignore-application-stop-failures \
+        --s3-location bucket=dbd-project,bundleType=zip,key=dbdBackend.zip \
+        --region ap-northeast-2 \
