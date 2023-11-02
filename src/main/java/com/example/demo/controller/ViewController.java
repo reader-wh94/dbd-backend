@@ -4,7 +4,6 @@ import com.example.demo.service.S3Service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/main")
@@ -14,7 +13,7 @@ public class ViewController {
 
     @GetMapping("/")
     public String main() {
-        return "HelloWorld";
+        return "Hello World";
     }
 
     @GetMapping("/perks")
