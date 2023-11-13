@@ -19,5 +19,3 @@
 3. AWS CodeDeploy에서 배포 내역 확인
 
    ![codedeploy](https://github.com/reader-wh94/dbd-backend/assets/68210266/a6648504-80c9-4106-805b-e8d5f2c1f92b)
-
-4. EC2 서버에서 애플리케이션 실행 확인
